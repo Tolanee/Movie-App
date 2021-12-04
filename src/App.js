@@ -26,7 +26,10 @@ function App() {
   }
 
   useEffect(() => {
-    getMovies(search)
+    if(search){
+      getMovies(search)
+    }
+    
   }, [search]);
 
   useEffect(() => {
