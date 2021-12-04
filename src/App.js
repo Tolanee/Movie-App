@@ -15,10 +15,11 @@ function App() {
   const [favs, setfavs] = useState([])
 
   const getMovies = async(search)=>{
-   await axios.get(`http://www.omdbapi.com/?s=${search}&apikey=f5a6c9b3`)
+   await axios.get(`https://www.omdbapi.com/?s=${search}&apikey=f5a6c9b3`)
     .then((res)=>{
       if(res.data.Search){
         setMovies(res.data.Search)
+        console.log(res.data.Search)
       }
         
     })
