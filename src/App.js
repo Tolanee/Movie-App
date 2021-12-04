@@ -36,7 +36,14 @@ function App() {
     const addFavouriteMovies = JSON.parse(
       localStorage.getItem('favourite-movie')
     );
-    setfavs(addFavouriteMovies)
+    console.log(addFavouriteMovies)
+    console.log(null)
+
+
+    if(addFavouriteMovies){
+      setfavs(addFavouriteMovies)
+    }
+    
   }, []);
 
   const saveToLocalStorage =(items)=>{
