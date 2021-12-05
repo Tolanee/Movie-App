@@ -5,16 +5,15 @@ body{
 
 .movie-app{
   height: 100vh;
+  width: 100%;
 }
 
  .movie-row {
 flex-wrap: nowrap;
+overflow-x: scroll;
 }
 
-.movie-row:hover {
-  overflow-x: scroll;
 
-}
 
 .image-container{
   position: relative;
@@ -47,7 +46,14 @@ transform: scale(1.1);
     transform: scale(1.1);
     width: 80%;
     }
-    
+    .movie-app{
+      height: 100vh;
+      width: 100%;
+    }
+    .movie-row {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      }
 
     .overlay{
       position: absolute;
