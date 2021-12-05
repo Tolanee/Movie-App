@@ -72,7 +72,7 @@ function App() {
         <HeaderName header='Movies'/>
         <Search search={search} setSearch={setSearch}/>
         </div>
-        <div className="d-flex flex-row">
+        <div className="movie-row d-flex flex-row">
         <MovieList movies={movies}
          favouriteComponent={AddFavs} 
          handleFavClick={addFavouriteMovie}/>
@@ -82,7 +82,7 @@ function App() {
         <HeaderName header='Favourites'/>
         
         </div>
-        <div className="d-flex flex-row">
+        <div className="movie-row d-flex flex-row">
         <MovieList movies={favs}
          favouriteComponent={DeleteFavs} 
          handleFavClick={deleteFavouriteMovie}/>

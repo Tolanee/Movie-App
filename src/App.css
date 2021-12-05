@@ -2,11 +2,20 @@ body{
   background: #141414;
   color: #ffffff;
 }
-.movie-app > .row {
-overflow-x: scroll;
+
+.movie-app{
+  height: 100vh;
+}
+
+ .movie-row {
 flex-wrap: nowrap;
+}
+
+.movie-row:hover {
+  overflow-x: scroll;
 
 }
+
 .image-container{
   position: relative;
   transition: transform 0.2s;
