@@ -25,8 +25,20 @@ function App() {
     })
   }
 
+  const noMovies = async()=>{
+    await axios.get(`https://www.omdbapi.com/?s=star wars&apikey=f5a6c9b3`)
+     .then((res)=>{
+       if(res.data.Search){
+         setMovies(res.data.Search)
+       }
+         
+     })
+   }
+
   useEffect(() => {
-    if(search){
+    if(!search){
+      noMovies()
+    }else {
       getMovies(search)
     }
     
